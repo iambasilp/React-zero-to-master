@@ -36,3 +36,29 @@
     transform: rotate(360deg);
   }
 }
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background-color: #fff;
+  font-family: sans-serif;
+  font-weight: normal;
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+ul{
+  list-style-type: none;
+}
+.container{
+  max-width: 1024px;
+  margin-inline: 1.5rem; /*this is margin-right margin-left*/
+  margin-inline: auto;
+}

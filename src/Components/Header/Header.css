@@ -1,0 +1,32 @@
+.header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(230,230,230);
+    z-index: 2;
+}
+nav{
+    height: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__logo{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:darkblue;
+}
+.nav__list{
+    display: flex;
+    column-gap: 2rem;
+}
+.nav__link{
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: inherit;
+}
+.nav__link:hover{
+    color: red;
+}
