@@ -23,11 +23,11 @@ const data = [
     {
         title: "Title Four",
         desc: "Phasellus eu euismod arcu. Morbi eget sollicitudin leo. Aenean ac justo sed mauris rhoncus sollicitudin hendrerit eu ligula. Vivamus luctus commodo pulvinar. Sed iaculis vel odio nec lacinia. Mauris risus lect",
-        isActive: false,
+        isActive: true,
     },
     {
         title: "Title Five",
-        desc: "Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus a bibendum urna. Nullam sed ultricies odio. Sed vitae sem eget enim luctus pretium non quis diam. Vestibulum arcu risus, maximus eget orci at, efficitur molestie neque",
+        desc: "Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus a bibendum urna. Nullam sed ultricies odio. Sed vitae sem eget enim luctus pretium non quis diam. Vestibulum arcu risus, maximus eget orc.",
         isActive: true,
     },
     {
@@ -37,11 +37,35 @@ const data = [
     },
 ]
 export default class List extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            MainData: data,
+            isActive:'all'
+        }
+    }
+    handleisActive = (event) => {
+        let value = event.target.value
+       
+        this.setState({
+            isActive:value
+        })
+    }
     render() {
+        const {MainData,isActive} = this.state
+        const newArray = data.filter((obj) => {
+            if (isActive === 'all') {
+                return true;
+            } else if (isActive === 'active') {
+                return obj.isActive === true
+            } else if (isActive === 'non-active') {
+                return obj.isActive === false
+            }
+        })
         return (
-            <Tools>
+            <Tools handleisActive={this.handleisActive}>
                 <div className='list'>
-                    {data.map((obj) => {
+                    {newArray.map((obj) => {
                         return <ListItem title={obj.title} desc={obj.desc} isActive={obj.isActive} />
                     })}
                 </div>

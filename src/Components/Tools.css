@@ -1,0 +1,11 @@
+.tools__box {
+  background-color: rgb(232,232,232);
+  padding: 0.5rem 2rem;
+  color:black;
+  position: absolute;
+  top: 4rem;
+  left: 1rem;
+  right: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
