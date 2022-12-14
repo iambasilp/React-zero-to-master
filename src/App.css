@@ -62,3 +62,7 @@ ul{
   margin-inline: 1.5rem; /*this is margin-right margin-left*/
   margin-inline: auto;
 }
+.grid{
+  display: grid;
+  gap: 1.5rem;
+}

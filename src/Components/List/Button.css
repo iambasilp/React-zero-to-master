@@ -1,0 +1,17 @@
+.card__button{
+    display: inline-block;
+    background-color: white;
+    margin-top: 1.5rem;
+    padding:.8rem 1.2rem;
+    border-radius: 4rem;
+    border: 3px solid transparent;
+    transition: all ease 0.3s;
+    color:black;
+}
+.card__button:hover{
+    border: 3px solid rgb(230,230,230);
+    background-color: transparent;
+}
+.card__button:hover > a{
+    color: white;
+}

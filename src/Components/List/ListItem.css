@@ -1,0 +1,15 @@
+
+.card{
+    background-color: darkblue;
+    color: white;
+    padding: 1rem 2rem 1.5rem;
+    height: 300px;
+    border-radius:1rem;
+}
+.card__title{
+    margin-bottom: .75rem;
+}
+.card__description{
+    padding: 0 2rem;
+    line-height: 130%;
+}
