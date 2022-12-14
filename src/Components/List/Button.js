@@ -5,7 +5,7 @@ export default class Button extends Component {
     const {isActive,ButtonClicked} = this.props
     return (
       <div className='card__button'>
-        <a href='#' onClick={ButtonClicked} >{isActive ? "Active" : "Non Active"}</a>
+        <a href='#' onClick={()=>{ButtonClicked(isActive ? "active" : "non-active")}} >{isActive ? "Active" : "Non Active"}</a>
       </div>
     )
   }

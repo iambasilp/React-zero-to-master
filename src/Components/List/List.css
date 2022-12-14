@@ -1,6 +1,6 @@
 .list{
     position: absolute;
-    top: 7.5rem;
+    top: 12.5rem;
     margin: 1rem 2rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px,1fr));

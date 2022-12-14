@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Tools from '../Tools'
-import ListItem from './ListItem'
+import SimpleList from './SimpleList'
 import './List.css'
 
 const data = [
@@ -40,7 +40,7 @@ export default class List extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            MainData: data,
+            mainData: data,
             isActive:'all'
         }
     }
@@ -51,9 +51,19 @@ export default class List extends Component {
             isActive:value
         })
     }
+    ButtonClicked = (arg)=>{
+        this.setState({
+            isActive:arg
+        })
+    }
+    handleAdd = (item)=>{
+       this.setState({
+        mainData: [item, ...this.state.mainData]
+       })
+   }
     render() {
-        const {MainData,isActive} = this.state
-        const newArray = data.filter((obj) => {
+        const {mainData,isActive} = this.state
+        const newArray = mainData.filter((obj) => {
             if (isActive === 'all') {
                 return true;
             } else if (isActive === 'active') {
@@ -63,12 +73,9 @@ export default class List extends Component {
             }
         })
         return (
-            <Tools handleisActive={this.handleisActive}>
-                <div className='list'>
-                    {newArray.map((obj) => {
-                        return <ListItem title={obj.title} desc={obj.desc} isActive={obj.isActive} />
-                    })}
-                </div>
+            <Tools ButtonValue={isActive} handleisActive={this.handleisActive} count={newArray.length} onAdd={this.handleAdd}>
+                {/* simple list is controlled component . its controlled by props */}
+                <SimpleList ButtonClicked={this.ButtonClicked} newArray={newArray}/>
             </Tools>
 
         )

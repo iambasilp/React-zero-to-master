@@ -18,6 +18,20 @@ nav{
     font-weight: bold;
     color:darkblue;
 }
+@media screen and (max-width:500px) {
+    .nav__menu{
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: red;
+    }
+    .nav__list{
+        flex-direction: column;
+    }
+}
+.nav__menu{
+
+}
 .nav__list{
     display: flex;
     column-gap: 2rem;
@@ -30,3 +44,4 @@ nav{
 .nav__link:hover{
     color: red;
 }
+

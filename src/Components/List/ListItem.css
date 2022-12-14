@@ -1,9 +1,10 @@
-
+.listitem{
+    height: auto;
+}
 .card{
     background-color: darkblue;
     color: white;
     padding: 1rem 2rem 1.5rem;
-    height: auto;
     border-radius:1rem;
     display: flex;
     flex-direction: column;

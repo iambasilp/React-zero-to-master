@@ -1,4 +1,4 @@
-.card__button{
+.card__button a{
     display: inline-block;
     background-color: white;
     margin-top: 1.5rem;
@@ -7,11 +7,12 @@
     border: 3px solid transparent;
     transition: all ease 0.3s;
     color:black;
+    cursor: pointer;
 }
-.card__button:hover{
+.card__button a:hover{
     border: 3px solid rgb(230,230,230);
     background-color: transparent;
 }
-.card__button:hover > a{
+.card__button a:hover{
     color: white;
 }

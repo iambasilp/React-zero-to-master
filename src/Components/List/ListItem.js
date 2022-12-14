@@ -4,16 +4,14 @@ import './ListItem.css'
 export default class ListItem extends Component {
     render() {
         // props acessing in class Componet this.props
-        const {title,desc,isActive} = this.props // destructring object
+        const {title,desc,isActive, ButtonClicked} = this.props // destructring object
         return (
             <div className='listitem'>
                 <div className="card__container">
                     <div className="card" style={isActive ? {backgroundColor:"green"} : {backgroundColor:"red"}}>
                         <h1 className='card__title'>{title}</h1>
                         <p className='card__description'>{desc}</p>
-                        <Button ButtonClicked={()=>{
-                            alert("Button Clicked")
-                        }} isActive={isActive}/>
+                        <Button ButtonClicked={ButtonClicked} isActive={isActive}/>
                     </div>
                    
                 </div>

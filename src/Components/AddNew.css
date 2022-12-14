@@ -1,0 +1,30 @@
+.tools__box-second {
+  background-color: rgb(232, 232, 232);
+  padding: 0.5rem 2rem;
+  color: black;
+  position: absolute;
+  top: 6.5rem;
+  left: 1rem;
+  right: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 1rem;
+}
+input{
+    font-size: 1rem;
+    border: none;
+    outline: none;
+}
+.title-input{
+    padding: .4rem .6rem;
+}
+.desc-input{
+    padding: .8rem .6rem;
+    font-family: inherit;
+}
+.button-input{
+    padding: 1rem;
+    cursor: pointer;
+    margin-left:1rem;
+    border: none;
+}
