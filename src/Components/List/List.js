@@ -61,6 +61,14 @@ export default class List extends Component {
         mainData: [item, ...this.state.mainData]
        })
    }
+   handleDelete = (obj)=>{
+    let newArray = this.state.mainData.filter((item)=>{
+        return item != obj
+    })
+    this.setState({
+        mainData: newArray
+    })
+   }
     render() {
         const {mainData,isActive} = this.state
         const newArray = mainData.filter((obj) => {
@@ -75,7 +83,7 @@ export default class List extends Component {
         return (
             <Tools ButtonValue={isActive} handleisActive={this.handleisActive} count={newArray.length} onAdd={this.handleAdd}>
                 {/* simple list is controlled component . its controlled by props */}
-                <SimpleList ButtonClicked={this.ButtonClicked} newArray={newArray}/>
+                <SimpleList ButtonClicked={this.ButtonClicked} newArray={newArray} handleDelete={this.handleDelete}/>
             </Tools>
 
         )

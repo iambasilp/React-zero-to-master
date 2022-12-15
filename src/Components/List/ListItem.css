@@ -2,6 +2,7 @@
     height: auto;
 }
 .card{
+    position: relative;
     background-color: darkblue;
     color: white;
     padding: 1rem 2rem 1.5rem;
@@ -16,4 +17,20 @@
 .card__description{
     padding: 0 2rem;
     line-height: 130%;
+}
+.card__delete{
+    position: absolute;
+    right: 1rem;   
+    padding: .3rem .6rem;
+    background-color:black;
+    color: white;
+    border-radius: 4rem;
+    border: none;
+    outline: none;
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+.card__delete:hover{
+    background-color: white;
+    color: black;
 }
