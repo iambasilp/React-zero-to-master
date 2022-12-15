@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/React-zero-to-master/static/css/main.6ebf0a26.css",
-    "main.js": "/React-zero-to-master/static/js/main.df1c1a87.js",
+    "main.css": "/React-zero-to-master/static/css/main.0e213f4c.css",
+    "main.js": "/React-zero-to-master/static/js/main.bb45690c.js",
     "static/js/787.4a0267e4.chunk.js": "/React-zero-to-master/static/js/787.4a0267e4.chunk.js",
     "static/media/logo.svg": "/React-zero-to-master/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/React-zero-to-master/index.html",
-    "main.6ebf0a26.css.map": "/React-zero-to-master/static/css/main.6ebf0a26.css.map",
-    "main.df1c1a87.js.map": "/React-zero-to-master/static/js/main.df1c1a87.js.map",
+    "main.0e213f4c.css.map": "/React-zero-to-master/static/css/main.0e213f4c.css.map",
+    "main.bb45690c.js.map": "/React-zero-to-master/static/js/main.bb45690c.js.map",
     "787.4a0267e4.chunk.js.map": "/React-zero-to-master/static/js/787.4a0267e4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6ebf0a26.css",
-    "static/js/main.df1c1a87.js"
+    "static/css/main.0e213f4c.css",
+    "static/js/main.bb45690c.js"
   ]
 }
